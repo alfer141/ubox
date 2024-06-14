@@ -1,4 +1,4 @@
-dateModified: 1718394773
+dateModified: 1718395288
 email:
   fromEmail: alarrynk@gmail.com
   fromName: Ubox
@@ -34,7 +34,7 @@ meta:
     d828c040-fb7e-42ea-9a84-6227909b1830: Common # Common
     d8919276-61ac-412a-871d-286378e6fdc3: QR # QR
     e97dc74c-f1e6-40d2-b435-d5ca8494154c: 'Category Thumbnail' # Category Thumbnail
-    e4827f2d-741b-4c50-ac80-e498066c30ca: 'Public Schema'
+    e4827f2d-741b-4c50-ac80-e498066c30ca: 'Public Schema' # Public Schema
 plugins:
   feed-me:
     edition: standard
