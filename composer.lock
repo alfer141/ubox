@@ -1184,11 +1184,6 @@
         {
             "name": "ether/splash",
             "version": "3.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ethercreative/splash.git",
-                "reference": "6eb3d2aee5f907b1a29844ad53847746a179d3f5"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/ethercreative/splash/zipball/6eb3d2aee5f907b1a29844ad53847746a179d3f5",
@@ -1213,11 +1208,9 @@
                     "ether\\splash\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Quickly and easily get beautiful Unsplash images in Craft!",
             "support": {
-                "issues": "https://github.com/ethercreative/splash",
-                "source": "https://github.com/ethercreative/splash/tree/v3"
+                "issues": "https://github.com/ethercreative/splash"
             },
             "time": "2019-04-16T10:33:50+00:00"
         },
@@ -2255,11 +2248,6 @@
         {
             "name": "phpoption/phpoption",
             "version": "1.9.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "80735db690fe4fc5c76dfa7f9b770634285fa820"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/80735db690fe4fc5c76dfa7f9b770634285fa820",
@@ -2268,10 +2256,6 @@
             },
             "require": {
                 "php": "^7.2.5 || ^8.0"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.8.2",
-                "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
             },
             "type": "library",
             "extra": {
@@ -2288,7 +2272,6 @@
                     "PhpOption\\": "src/PhpOption/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -2310,20 +2293,6 @@
                 "option",
                 "php",
                 "type"
-            ],
-            "support": {
-                "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.9.2"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
-                    "type": "tidelift"
-                }
             ],
             "time": "2023-11-12T21:59:55+00:00"
         },
@@ -4214,11 +4183,6 @@
         {
             "name": "vlucas/phpdotenv",
             "version": "v3.6.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "5b547cdb25825f10251370f57ba5d9d924e6f68e"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5b547cdb25825f10251370f57ba5d9d924e6f68e",
@@ -4229,11 +4193,6 @@
                 "php": "^5.4 || ^7.0 || ^8.0",
                 "phpoption/phpoption": "^1.5.2",
                 "symfony/polyfill-ctype": "^1.17"
-            },
-            "require-dev": {
-                "ext-filter": "*",
-                "ext-pcre": "*",
-                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.21"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator.",
@@ -4250,7 +4209,6 @@
                     "Dotenv\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4271,20 +4229,6 @@
                 "dotenv",
                 "env",
                 "environment"
-            ],
-            "support": {
-                "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v3.6.10"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
-                    "type": "tidelift"
-                }
             ],
             "time": "2021-12-12T23:02:06+00:00"
         },
@@ -5186,11 +5130,6 @@
         {
             "name": "psy/psysh",
             "version": "v0.11.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "128fa1b608be651999ed9789c95e6e2a31b5802b"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/bobthecow/psysh/zipball/128fa1b608be651999ed9789c95e6e2a31b5802b",
@@ -5207,9 +5146,6 @@
             },
             "conflict": {
                 "symfony/console": "4.4.37 || 5.3.14 || 5.3.15 || 5.4.3 || 5.4.4 || 6.0.3 || 6.0.4"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.2"
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
@@ -5238,7 +5174,6 @@
                     "Psy\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5257,20 +5192,11 @@
                 "interactive",
                 "shell"
             ],
-            "support": {
-                "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.22"
-            },
             "time": "2023-10-14T21:56:36+00:00"
         },
         {
             "name": "symfony/var-dumper",
             "version": "v5.4.40",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "af8868a6e9d6082dfca11f1a1f205ae93a8b6d93"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/var-dumper/zipball/af8868a6e9d6082dfca11f1a1f205ae93a8b6d93",
@@ -5284,14 +5210,6 @@
             },
             "conflict": {
                 "symfony/console": "<4.4"
-            },
-            "require-dev": {
-                "ext-iconv": "*",
-                "symfony/console": "^4.4|^5.0|^6.0",
-                "symfony/http-kernel": "^4.4|^5.0|^6.0",
-                "symfony/process": "^4.4|^5.0|^6.0",
-                "symfony/uid": "^5.1|^6.0",
-                "twig/twig": "^2.13|^3.0.4"
             },
             "suggest": {
                 "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
@@ -5313,7 +5231,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5333,33 +5250,11 @@
                 "debug",
                 "dump"
             ],
-            "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.4.40"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
             "time": "2024-05-31T14:33:22+00:00"
         },
         {
             "name": "yiisoft/yii2-shell",
             "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-shell.git",
-                "reference": "358d4651ce1f54db0f1add026c202ac2e47db06b"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/yiisoft/yii2-shell/zipball/358d4651ce1f54db0f1add026c202ac2e47db06b",
@@ -5383,7 +5278,6 @@
                     "yii\\shell\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5402,19 +5296,6 @@
                 "shell",
                 "yii2"
             ],
-            "support": {
-                "forum": "http://www.yiiframework.com/forum/",
-                "irc": "irc://irc.freenode.net/yii",
-                "issues": "https://github.com/yiisoft/yii2-shell/issues",
-                "source": "https://github.com/yiisoft/yii2-shell",
-                "wiki": "http://www.yiiframework.com/wiki/"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/yiisoft",
-                    "type": "open_collective"
-                }
-            ],
             "time": "2022-09-04T10:37:52+00:00"
         }
     ],
@@ -5428,5 +5309,5 @@
     "platform-overrides": {
         "php": "7.2.5"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
