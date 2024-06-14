@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: es-MX
+name: Ubox
+primary: true
+siteGroup: 194b357d-1b2b-4eab-8141-4aa960112bb9 # Ubox
+sortOrder: 1
