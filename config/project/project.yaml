@@ -1,4 +1,4 @@
-dateModified: 1646338654
+dateModified: 1718392285
 email:
   fromEmail: alarrynk@gmail.com
   fromName: Ubox
@@ -56,7 +56,7 @@ system:
   edition: solo
   live: true
   name: Ubox
-  schemaVersion: 3.7.33
+  schemaVersion: 3.8.0.1
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
