@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-dateModified: 1718395199
-=======
-dateModified: 1718395288
->>>>>>> origin/main
+dateModified: 1718396153
 email:
   fromEmail: alarrynk@gmail.com
   fromName: Ubox
@@ -20,12 +16,10 @@ meta:
     8e68b477-d2e8-4c91-bb76-952d4d2c0468: Menus # Menus
     38f649eb-6dc0-4c90-9581-6863d4f6c923: Logo # Logo
     97ea7db2-8920-453c-9905-639afe4230d9: Menus # Menus
-    194b357d-1b2b-4eab-8141-4aa960112bb9: Ubox # Ubox
     198c99ea-5ccd-41bf-a65b-025832c82192: 'Descripción del platillo' # Descripción del platillo
     227b408b-3df1-4aac-91b6-1929cd1ead1d: Menus # Menus
     962b0bef-0527-4e56-a819-33cfa3f0fff5: 'Menú Digital Demo' # Menú Digital Demo
     06877d42-d677-4ef1-a092-2c297d188b51: Ubox # Ubox
-    26193bd8-6b51-463b-9b25-60101f3d2dca: Common # Common
     30901ff3-1441-482e-be94-ccbe056730f4: 'Tu Moto' # Tu Moto
     41495cc6-b3a4-4a8e-962f-375d832baf20: menus # menus
     3670293b-cce1-4c94-8d0e-f818616a0646: Menu # Menu
@@ -36,7 +30,6 @@ meta:
     a2797350-b45a-436f-b536-a29455bc2fce: 'Categoría del Platillo' # Categoría del Platillo
     c0643579-92bd-49b2-b204-2e8083ea32cf: 'Menu Digital' # Menu Digital
     c3e48889-6808-4431-848b-b9572942d24e: Imagen # Imagen
-    c8fb028f-15bb-4143-beb2-c9addaebcc88: Ubox # Ubox
     d48dfd4b-b4d4-478f-9199-c50d5a3e9efc: 'Menú Digital Demo' # Menú Digital Demo
     d828c040-fb7e-42ea-9a84-6227909b1830: Common # Common
     d8919276-61ac-412a-871d-286378e6fdc3: QR # QR
