@@ -1,4 +1,4 @@
-dateModified: 1718392285
+dateModified: 1718393075
 email:
   fromEmail: alarrynk@gmail.com
   fromName: Ubox
@@ -38,7 +38,7 @@ plugins:
   feed-me:
     edition: standard
     enabled: true
-    schemaVersion: 4.3.0
+    schemaVersion: 4.4.1
   qrcode:
     edition: standard
     enabled: true
