@@ -23,18 +23,16 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
             warning: null
             width: 100
         name: Contenido
         sortOrder: 1
+fs: menuDigital
 handle: menuDigital
 hasUrls: true
 name: 'Menú Digital'
-settings:
-  path: '@webroot/menu-demo'
 sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-type: craft\volumes\Local
 url: '@web/menu-demo'

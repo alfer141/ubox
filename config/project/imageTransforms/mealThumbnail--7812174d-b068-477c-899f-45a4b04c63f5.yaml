@@ -6,4 +6,5 @@ mode: crop
 name: 'Meal Thumbnail'
 position: center-center
 quality: 100
+upscale: true
 width: 189

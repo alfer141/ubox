@@ -1,10 +1,12 @@
 {
+"minimum-stability": "beta",
+"prefer-stable": true,
   "require": {
-    "craftcms/cms": "^3.6.4",
-    "craftcms/feed-me": "4.8.1",
-    "ether/splash": "3.0.5",
+    "craftcms/cms": "^4.0.0",
+    "craftcms/feed-me": "5.5.0",
+    "ether/splash": "4.0.0",
     "vlucas/phpdotenv": "^3.4.0",
-    "webdna/qrcode": "1.0.6"
+    "webdna/qrcode": "2.1.0"
   },
   "require-dev": {
     "yiisoft/yii2-shell": "^2.0.3"
@@ -18,7 +20,7 @@
     "sort-packages": true,
     "optimize-autoloader": true,
     "platform": {
-      "php": "7.2.5"
+      "php": "8.0.2"
     },
     "allow-plugins": {
       "yiisoft/yii2-composer": true,

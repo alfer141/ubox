@@ -1,8 +1,30 @@
-dateModified: 1718396153
+dateModified: 1718396807
 email:
   fromEmail: alarrynk@gmail.com
   fromName: Ubox
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  menuDigital:
+    hasUrls: true
+    name: 'Menú Digital'
+    settings:
+      path: '@webroot/menu-demo'
+    type: craft\fs\Local
+    url: '@web/menu-demo'
+  menus:
+    hasUrls: true
+    name: menus
+    settings:
+      path: '@webroot/menus'
+    type: craft\fs\Local
+    url: '@web/menus/'
+  tuMoto:
+    hasUrls: true
+    name: 'Tu Moto'
+    settings:
+      path: '@webroot/tumoto'
+    type: craft\fs\Local
+    url: '@web/tumoto'
 meta:
   __names__:
     0a94cfd3-d7fd-4725-992f-3bb365a17c81: 'Color Secundario' # Color Secundario
@@ -39,7 +61,7 @@ plugins:
   feed-me:
     edition: standard
     enabled: true
-    schemaVersion: 4.4.1
+    schemaVersion: 5.1.0.1
   qrcode:
     edition: standard
     enabled: true
@@ -57,10 +79,11 @@ system:
   edition: solo
   live: true
   name: Ubox
-  schemaVersion: 3.8.0.1
+  schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null
