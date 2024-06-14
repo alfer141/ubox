@@ -1,0 +1,107 @@
+{% extends 'partials/layout' %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="/theme.css">
+{% endblock %}
+
+
+{% block title %}Menú Digital| {{ siteName }} {% endblock %}
+{% block metas %}
+    <link rel="canonical" href="{{ category.url }}" />
+    <meta content="" name="description" />
+    <meta content="Menú Digital| {{ siteName }} " property="og:title" />
+    <meta content="" property="og:description" />
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://ubox.digital/">
+    <meta name="twitter:card" content="summary_large_image">
+{% endblock %}
+
+{% set segment = craft.app.request.getSegment(2) %}
+
+{% block content %}
+
+{% if category != '' %}
+    
+{% else %}
+    {% redirect '404' %}
+    
+{% endif %}
+
+{% set cover = category.image[0] ?? null %}
+{% set meals = craft.entries()
+    .section('menuDigitalDemo')
+    .with(['saucerCategory',['image', {withTransforms: ['mealThumbnail'] }] ])
+    .relatedTo(category)
+    .all()%}
+<div class="dn-ns dn-m db">
+{% include 'partials/float-menu' %}
+    <main>
+        <div class="category_detail_image_wrapper relative">
+            <a class="link historyBack ph3 absolute mt3" onclick="history.back()">
+                <img src="/images/global/back.svg" alt="">
+                Regresar </a>
+                <img class="w-30 right-1 absolute z-999 mt2" src="{{ logo.url }}" alt="">
+            {% if cover %}
+                <img class="cat_cover_image" src="{{ cover.getUrl() }}" alt="{{ category.title }}" />
+            {% endif %}
+            <div class="category_detail_image_mask"></div>
+            
+        </div>
+
+        <div class="categorty_detail_info tc ph3">
+            <a class="dib f4 link" href="{{ url('menu')}}">Menu/</a>
+            <h1 class="fw5 bebas f1 mv0 pv0">{{ category.title }}</h1>
+            <span class="o-70">{{ meals | length }} Platillos disponibles</span>
+            {% if category.description %}
+            <div class="ctg_description">
+                <p class="lh-copy">
+                    {{ category.description }}
+                </p>
+            </div>
+            {% endif %}
+        </div>
+    </main>
+    <section class="pb4 absolute" style="margin-top:-2rem;">
+        <div class="mw8 center ph0-ns ph3">
+            <div class="flex flex-wrap ph3 ph0-ns">
+            {% for meal in meals %}
+                {% set mealCat = meal.saucerCategory[0] ?? null %}
+                {% set thumbImage = meal.image[0] ?? null %}
+                <div class="w-25-ns w-100 flex mb3 pb2">
+                    <article class="mealCard_menu mr4-ns mr0 w-100">
+                        <a class="dib-ns flex flex-wrap items-center w-100" href="{{ meal.url }}">
+                            <div class="mealThumbImage_menu w-100-ns w-30">
+                            {% if thumbImage %}
+                                <img class="mImageCard_menu" src="{{ thumbImage.getUrl({transform:'mealThumbnail'}) }}" alt="{{ meal.title }}" />
+                            {% else %}
+                                <img class="mImageCard_menu" src="/images/global/no-photo-2.webp" alt="{{ meal.title }}" />
+                            {% endif %}
+                            </div>
+
+                            <div class="meal_info_card ph3 pt3-ns pb4-ns w-100-ns w-70">
+                                <div class="flex flex-wrap justify-between">
+                                    <div class="w-70-ns w-100">
+                                        <h2 class="f4 mv0 fw5 pb1 pt0">{{ meal.title }}</h2>
+                                        <span class="o-70 mt2 pv0">{{ mealCat.title }}</span>
+                                        <h3 class="f5 pv0 fw5 mt2">{{ meal.price | currency('MXN') }}</h3>
+                                    </div>
+                                
+                                </div>
+                            </div>
+
+                        </a>    
+                    </article>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="db-ns db-m dn w-50 center ">
+        <div class="flex items-center vh-75">
+            <h1 class="f1 mv0 ">Este es un Menú Digital optimizado para móviles porfavor cambia de dispositivo</h1>
+        </div>
+        <span class="f7">Ubox Digital es un proyecto de <a href="">afdsgn.com</a></span>
+</div>
+{% endblock %}

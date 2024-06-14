@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: menus
+name: Menus
+propagationMethod: all
+siteSettings:
+  06877d42-d677-4ef1-a092-2c297d188b51: # Ubox
+    enabledByDefault: true
+    hasUrls: true
+    template: menus/_entry
+    uriFormat: 'menus/{slug}'
+structure:
+  maxLevels: null
+  uid: 43af53a9-9c6f-49d0-8b88-2bbb0d13f235
+type: structure

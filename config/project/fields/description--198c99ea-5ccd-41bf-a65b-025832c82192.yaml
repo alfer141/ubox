@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: c0643579-92bd-49b2-b204-2e8083ea32cf # Menu Digital
+handle: description
+instructions: ''
+name: 'Descripción del platillo'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

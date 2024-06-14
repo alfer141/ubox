@@ -1,0 +1,42 @@
+{% extends 'partials/layout' %}
+{% block title %} Has Generado un nuevo QR de {{ entry.title }} | {{ siteName }}{% endblock%}
+{% set bodyClass = 'bg-black white avenir'%}
+{% block metas %}
+    <meta property="og:title" content="Has Generado un nuevo QR de {{ entry.title }} | {{ siteName }}" />
+    <meta name="description" content="Descarga o arrastra el código QR generado para  comenzar a usarlo">
+    <meta property="og:description" content="Descarga o arrastra el código QR generado para  comenzar a usarlo" />
+{% endblock %}
+{% set menu = entry.menu.one() %}
+
+{% block scripts %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/jquery.classyqr.min.js"></script>
+    <script>
+        $("#qr1").ClassyQR({
+        create:true,
+        size:530,
+        type: 'url',
+        alt: '{{ entry.title }} | Ubox Digital',
+        url: '{{ menu.url() }}',
+        format:'svg' });
+    </script>
+
+{% endblock %}
+
+{% block content %}
+<style>
+    #qr1 img{
+        width: 50%;
+        margin: 0 auto;
+    }
+</style>
+
+    <main class="tc vh-100-ns flex items-center ">
+        <div class="mw8 center ph0-ns ph3">
+            <img class="w-40 center mb5 pr4-ns" src="/assets/ubox-logo.svg" alt="Ubox Logo">        
+                <div id="qr1"> </div>
+            <h1 class="tc f5 fw5">{{ entry.title }}</h1>
+        </div>
+        
+    </main>
+{% endblock %}

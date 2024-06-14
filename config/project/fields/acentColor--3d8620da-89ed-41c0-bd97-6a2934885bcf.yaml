@@ -1,0 +1,12 @@
+columnSuffix: afddihbv
+contentColumnType: string(7)
+fieldGroup: 7cab7bc5-2156-4ed0-87d3-49745370d305 # VARIABLES DEMO
+handle: acentColor
+instructions: ''
+name: Acento
+searchable: false
+settings:
+  defaultColor: '#1b365d'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

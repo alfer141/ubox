@@ -1,0 +1,144 @@
+{% extends 'partials/layout' %}
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="/theme.css">
+{% endblock %}
+{% block title %}{{ entry.title }} | Orvallo Café Pachuca {% endblock %}
+
+{% block metas %}
+    <link rel="canonical" href="{{ entry.url }}" />
+    <meta content="{{ entry.description }}" name="description" />
+    <meta content="Menú | Orvallo Café Pachuca" property="og:title" />
+    <meta content="{{ entry.description }}" property="og:description" />
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://orvallocafe.com/">
+    <meta name="twitter:card" content="summary_large_image">
+{% endblock %}
+{% block content %}
+
+{% set mealCat = craft.categories()
+    .group('saucerCategory')
+    .relatedTo(entry)
+    .with(['image'])
+    .one() %}
+{% set thumbImage = entry.image[0] ?? null %}
+
+<div class="dn-ns dn-m db">  
+    {% include 'partials/float-menu' %}
+    <main>
+        <div class="mw8 center ph0-ns pb2">
+            <div class="flex flex-wrap">
+                <div class="w-70-ns w-100">
+                    <div class="menu_detail_image_wrapper relative">
+                       
+                        <a class="link historyBack ph3 absolute mt3" onclick="history.back()">
+                            <img src="/images/global/back.svg" alt="">
+                            Regresar </a>
+                            <img class="w-30 right-1 absolute mt2" src="{{ logo.url }}" alt="">
+                       
+                       {% if thumbImage %}
+                        <img class="feat_image" src="{{ thumbImage.url }}" alt="{{ entry.title }}" >
+                        {% else %}
+                        <img class="feat_image" src="/images/global/no-photo.webp" alt="{{ entry.title }}" >
+                        {% endif %}
+                        <div class="meail_image_mask"></div>
+                    </div>
+                    
+                </div>
+                <div class="w-30-ns w-100 items-strech flex">
+                    <div class="menu_detail_info_wrapper ph3 pv3-ns pv0">
+                        <ul class="list pl0">
+                            <li class="dib"><a href="{{ url('demo-menu')}}">Menú /</a></li>
+                            <li class="dib"><a href="{{ mealCat.url }}">{{ mealCat }}</a></li>
+                        </ul>
+                        
+                        <h1 class="bebas f2 fw5 mb0 pb0">{{ entry.title }}</h1>
+                        <span class="f3 fw7">{{ entry.price | currency('MXN') }}</span>
+                        <span class="o-60 db pt2"><img src="/images/global/grams-icon.svg" alt=""> Porción de {{ entry.grams}}</span>
+                        <p class="lh-copy">{{ entry.description }}</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    {#
+        <main class="relative">
+            <div class="flex flex-wrap meal_detail_header ph3 justify-between w-100 items-center pv3">
+                <div>
+                    <a class="link" onclick="history.back()">Regresar </a>
+                </div>
+                <div>
+                    <img class="tc w-auto" src="/assets/images/global/orvallo-logo.svg" alt="Orvallo café Pachuca Logo SVG" />
+                </div>
+            </div>
+
+            <div class="meail_detail_image_wrapper relative">
+                
+                {% if thumbImage %}
+                <img class="meal_photo" src="{{ thumbImage.getUrl({transform:'mealDetail'}) }}" alt="{{ entry.title }}" />
+                {% else %}
+                <div class="no_meal_photo flex items-center justify-center">
+                    <img class="w-20" src="/assets/images/global/camera.svg" alt="" />
+                </div>
+                {% endif %}
+                <div class="meail_image_mask"></div>
+            </div>
+
+            <div class="meal_info ph3">
+                <ul class="menu_detail_breadcrumbs list pl0 mv0">
+                    <li class="dib"><a href="{{url('menu')}}">Menu /</a></li>
+                    <li class="dib"><a href="#">{{ mealCat.title }}</a></li>
+                </ul>
+                <h1 class="bebas f1 fw5 mt0 pt0 mb1 pb0">{{ entry.title }}</h1>
+                <h2 class="f2 mv0 pv0">{{ entry.price | currency('MXN') }}</h2>
+                <span>Porción de {{ entry.grams}}</span>
+                <p class="lh-copy tj">{{ entry.description }}</p>
+            </div>
+        </main>
+    #}
+
+    {% set relatedMeals = entry.relatedMeals.all() %}
+
+    {% if relatedMeals | length %}
+        <section class="relatedMeals pt3 pb5">
+            <div class="mw8 center ph0-ns ph3">
+                <h2 class="fw5 f3 bebas mt0">Te recomendamos</h2>
+                <div class="relatedMeals_h_wrapper">
+                    {% for meal in relatedMeals %}
+                    {% set img = meal.image[0] ?? false %}
+                    <article class="mealCard mr4">
+                        <a href="{{ meal.url }}">
+                            <div class="mealThumbImage">
+                            {% if img %}
+                                <img class="mImageCard" src="{{ img.url() }}" alt="{{ meal.title }}" />
+                            {% else %}
+                                <img class="mImageCard_menu" src="/images/global/no-photo-2.webp" alt="{{ meal.title }}" />
+                            {% endif %}
+                            </div>
+                            <div class="meal_info_card pt3 pb4">
+                                <div class="flex flex-wrap justify-between">
+                                    <div class="w-70">
+                                        <h2 class="bebas f4 mv0 pv0 fw5">{{ meal.title }}</h2>
+                                    </div>
+                                    <div class="w-30">
+                                        <h3 class="f4 mv0 pv0 fw5 bebas">{{ meal.price | currency('MXN') }}</h3>
+                                    </div>
+                                </div>
+                                
+                               
+                            </div>
+                        </a>    
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    {% endif %}
+</div>
+
+<div class="db-ns db-m dn w-50 center ">
+    <div class="flex items-center vh-75">
+        <h1 class="f1 mv0 ">Este es un Menú Digital optimizado para móviles porfavor cambia de dispositivo</h1>
+    </div>
+    <span class="f7">Ubox Digital es un proyecto de <a href="">afdsgn.com</a></span>
+</div>  
+{% endblock %}

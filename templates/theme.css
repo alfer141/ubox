@@ -1,0 +1,250 @@
+{% set expiry = now|date_modify('+30 days') %}
+
+{% header "Cache-Control: max-age=" ~ (expiry.timestamp - now.timestamp) %}
+{% header "Pragma: cache" %}
+{% header "Expires: " ~ expiry|date('D, d M Y H:i:s', 'GMT') ~ " GMT" %}
+:root{
+    --primary-color:{{ menuDemoDigital.primaryColor }};
+    --primary-color-0:rgba(20, 23, 31, 0);
+    --secondary-color:{{ menuDemoDigital.secondaryColor }};
+    --secondary-color-60:rgba(242,240,230,0.60);
+    --complementary-color:#262B39;
+    --acent:{{ menuDemoDigital.acentColor }};
+    --bebas:'Bebas Neue', sans-serif;
+    --arkipielago:'arkipelagoregular', sans-serif;
+}
+@import 'variants.css';
+body{
+    background-color: rgb(var(--primary-color));
+    color: var(--secondary-color);      
+}
+.home_btn{
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    width: 70px;
+    height: 70px;
+    background-color: var(--acent);
+    border-radius: 100%;
+    z-index: 999999;
+}
+.home_btn > img{
+    object-fit: contain;
+}
+.horizontal_overflow_wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    }
+.category_card {
+    background-color: var(--complementary-color);
+    min-width: 125px;
+    height: 170px;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    text-decoration:none ;
+}
+.category_card > img {
+    object-fit:cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.catTitle{
+    bottom: 2rem;
+    left: .35rem;
+    position: absolute;
+}
+.category_thumb_mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(var(--primary-color),0.10) 0%, rgba(var(--primary-color),0.40) 67%, rgb(var(--primary-color)) 102%);
+    bottom: 0;
+
+}
+.mealsCat_title{
+    border-bottom: 1px solid var(--secondary-color);
+}
+.mealsCat_header{
+    border-bottom: 1px solid var(--secondary-color);
+}
+.meal_menu_link{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.meal_image_wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.menu_thumb_image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-radius: .25rem;
+}
+.menu_detail_breadcrumbs li a{
+    color:var(--secondary-color);
+    text-decoration: none;
+}
+.meail_detail_image_wrapper{
+    height: 50vh;
+}
+.meail_detail_image_wrapper .meal_photo{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+}
+.meail_image_mask{
+    position:absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 102%;
+}
+
+.meal_detail_header{
+    position: absolute;
+    top: .5rem;
+    z-index: 1;
+}
+.no_meal_photo{
+    background-color: var(--complementary-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.category_detail_image_wrapper{
+    height: 40vh;
+}
+.cat_cover_image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.category_detail_image_mask{
+    background-image: linear-gradient(180deg, rgba(var(--primary-color),0.40) 0%, rgba(var(--primary-color),0.40) 67%, rgb(var(--primary-color)
+    ) 100%);
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    bottom: -1px;
+}
+.categorty_detail_info{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+}
+.relatedMeals_h_wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+.mealThumbImage_menu{
+    width: 100%;
+    height: 200px;
+}
+.mealCard_menu{
+    background-color: var(--complementary-color);
+    width: 256px;
+}
+.mealCard_menu a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.mImageCard_menu {
+    object-fit: cover;
+    object-position: center;
+    width: 100% !important;
+    height: 100%;
+}
+.menu_detail_image_wrapper{
+    width: 100%;
+    height: 490px ;
+}
+.menu_detail_image_wrapper > .feat_image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.menu_detail_info_wrapper{
+    background-color: var(--complementary-color);
+}
+.menu_detail_info_wrapper ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+.menu_detail_info_wrapper ul li a:hover{
+    text-decoration: underline;
+}
+.historyBack{
+    position: absolute;
+    top: 1rem;
+    z-index: 99;
+    cursor: pointer;
+}
+.mealCard{
+    width: 200px;
+}
+.mealThumbImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+.mealThumbImage > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px){
+    .meal_image_wrapper{
+        background-color: var(--complementary-color);
+        width: 89px;
+        height: 89px;
+    }
+    .mealThumbImage_menu{
+        width: 89px;
+        height: 89px;
+        border-radius: .25rem;
+    }
+    .mImageCard_menu {
+        border-radius: .25rem;
+    }
+
+    .mealCard_menu{
+        background-color: transparent;
+    }
+    .menu_detail_info_wrapper{
+        background-color: transparent;
+        position: relative;
+        margin-top: -4rem;
+    }
+    .menu_detail_image_wrapper{
+        width: 100%;
+        height: 390px ;
+    }
+    .meail_image_mask{
+        position:absolute;
+        bottom: -1px;
+        width: 100%;
+        height: 102%;
+        background-image: linear-gradient(180deg, rgba(var(--primary-color),0) 0%, rgba(var(--primary-color),0.10) 67%, rgb(var(--primary-color)) 100%);
+    }
+    .mealCard_menu{
+        width: 100%;
+    }
+}

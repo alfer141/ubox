@@ -1,0 +1,34 @@
+contentColumnType: string
+fieldGroup: 8e68b477-d2e8-4c91-bb76-952d4d2c0468 # Menus
+handle: menu
+instructions: 'Añade un archivo PDF del menú del cliente con un peso máximo de 2MB'
+name: Menu
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+    - pdf
+  defaultUploadLocationSource: 'volume:41495cc6-b3a4-4a8e-962f-375d832baf20' # menus
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:41495cc6-b3a4-4a8e-962f-375d832baf20' # menus
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:41495cc6-b3a4-4a8e-962f-375d832baf20' # menus
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

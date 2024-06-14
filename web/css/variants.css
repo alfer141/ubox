@@ -1,0 +1,11 @@
+
+:root{
+    --primary-color:20, 23, 31;
+    --primary-color-0:rgba(20, 23, 31, 0);
+    --secondary-color:#F2F0E6;
+    --secondary-color-60:rgba(242,240,230,0.60);
+    --complementary-color:#262B39;
+    --acent:#1B365D;
+    --bebas:'Bebas Neue', sans-serif;
+    --arkipielago:'arkipelagoregular', sans-serif;
+}

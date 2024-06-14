@@ -1,0 +1,40 @@
+fieldLayouts:
+  d5b64b08-013a-4583-b347-efa69cf11a4f:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+        name: Contenido
+        sortOrder: 1
+handle: menuDigital
+hasUrls: true
+name: 'Menú Digital'
+settings:
+  path: '@webroot/menu-demo'
+sortOrder: 2
+titleTranslationKeyFormat: null
+titleTranslationMethod: null
+type: craft\volumes\Local
+url: '@web/menu-demo'

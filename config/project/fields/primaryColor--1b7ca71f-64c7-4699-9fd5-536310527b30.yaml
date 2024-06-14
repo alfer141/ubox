@@ -1,0 +1,19 @@
+columnSuffix: ndehcwbj
+contentColumnType: text
+fieldGroup: 7cab7bc5-2156-4ed0-87d3-49745370d305 # VARIABLES DEMO
+handle: primaryColor
+instructions: "Escribe los 3 primero valores RGB. Ejemplo: 20, 23, 31\r\nSi necesitas una referencia puedes ir a: https://htmlcolorcodes.com/es/selector-de-color?ref=ubox.digital"
+name: 'Color primario (Valores RGB sin Alpha)'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

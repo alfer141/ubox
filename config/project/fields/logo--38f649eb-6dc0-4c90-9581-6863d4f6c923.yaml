@@ -1,0 +1,33 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 7cab7bc5-2156-4ed0-87d3-49745370d305 # VARIABLES DEMO
+handle: logo
+instructions: ''
+name: Logo
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:41495cc6-b3a4-4a8e-962f-375d832baf20' # menus
+  defaultUploadLocationSubpath: logos
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:41495cc6-b3a4-4a8e-962f-375d832baf20' # menus
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:3ac43b9a-6a84-48c9-bf94-ad3912bcdb50' # Menú Digital
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

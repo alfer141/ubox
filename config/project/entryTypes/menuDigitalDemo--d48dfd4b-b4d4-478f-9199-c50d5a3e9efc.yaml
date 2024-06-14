@@ -1,0 +1,92 @@
+fieldLayouts:
+  8b1e667a-9c0d-4b87-bc0c-9c1b711a03d1:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 198c99ea-5ccd-41bf-a65b-025832c82192 # Descripción del platillo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: c3e48889-6808-4431-848b-b9572942d24e # Imagen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 02b99efe-7f35-4022-a9ee-59d0c0948ce3 # Precio
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 01ef143d-bf3d-4319-9b04-1b2e23681839 # Porción en gramos/Mililitros
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 58728069-2060-41b6-ae2f-996d1a6ade0a # Categoria del platillo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 5152587a-75e7-4924-8c37-01e668f3f8e1 # Platillos relacionados
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Contenido
+        sortOrder: 1
+handle: menuDigitalDemo
+hasTitleField: true
+name: 'Menú Digital Demo'
+section: 962b0bef-0527-4e56-a819-33cfa3f0fff5 # Menú Digital Demo
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

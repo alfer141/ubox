@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: c0643579-92bd-49b2-b204-2e8083ea32cf # Menu Digital
+handle: saucerCategory
+instructions: ''
+name: 'Categoria del platillo'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: 'group:a2797350-b45a-436f-b536-a29455bc2fce' # Categoría del Platillo
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

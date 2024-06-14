@@ -1,0 +1,46 @@
+fieldLayouts:
+  f0b8a7bb-8a4b-4eff-81ac-0ef4866248d6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 38f649eb-6dc0-4c90-9581-6863d4f6c923 # Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1b7ca71f-64c7-4699-9fd5-536310527b30 # Color primario (Valores RGB sin Alpha)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0a94cfd3-d7fd-4725-992f-3bb365a17c81 # Color Secundario
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3d8620da-89ed-41c0-bd97-6a2934885bcf # Acento
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Variables
+        sortOrder: 1
+handle: menuDemoDigital
+name: 'Menú Demo Digital '
+sortOrder: 1

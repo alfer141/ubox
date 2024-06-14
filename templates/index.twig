@@ -1,0 +1,44 @@
+{% extends 'partials/layout' %}
+{% block title %} Almacena y comparte tus archivos digitales | {{ siteName }}{% endblock%}
+
+{% block metas %}
+    <meta property="og:title" content="Almacena y comparte tus archivos digitales | {{ siteName }}" />
+    <meta name="description" content="Sube el menú de tu restaurante, tu catálogo de productos presentaciones y compártelas de forma fácil y rápida.">
+    <meta property="og:description" content="Sube el menú de tu restaurante, tu catalogo de productos, tus presentaciones y compártelas de forma fácil y rapida." />
+{% endblock %}
+
+{% block content %}
+    <nav class="mw8 center ph3">
+       <div class="flex justify-between pv4">
+            <div></div>
+            <div>
+                <img class="pointer" id="icon" src="/assets/moon-dark.svg" alt="Dark mode">
+            </div>
+       </div>
+        
+    </nav>
+    <main class="tc vh-75 flex items-center ">
+        
+        <div class="center">
+            <img id="logo" src="/assets/ubox-logo.svg" alt="Ubox Logo">
+            <h1 class="f7 fw3">Powered by <a href="https://draw.mx?ubox-referal" target="_blank">Draw Studio</a></h1>
+        </div>
+        
+    </main>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        var icon = document.getElementById('icon')
+        icon.onclick = function(){
+            document.body.classList.toggle('light-mode');
+            if(document.body.classList.contains('light-mode')){
+                icon.src = '/assets/moon-light.svg';
+                logo.src = '/assets/ubox-light.svg';
+            } else{
+                icon.src = '/assets/moon-dark.svg';
+                logo.src = '/assets/ubox-dark.svg';
+            }
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: c0643579-92bd-49b2-b204-2e8083ea32cf # Menu Digital
+handle: relatedMeals
+instructions: ''
+name: 'Platillos relacionados'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:962b0bef-0527-4e56-a819-33cfa3f0fff5' # Menú Digital Demo
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

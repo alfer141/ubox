@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="author" content="Alex Fernández Design">
+        <meta property="og:locale" content="es_MX" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="/assets/og-ubox.png" />
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz" crossorigin="anonymous">	
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="" type="image/x-icon" />
+        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+        <link rel="stylesheet" href="/css/main.css"/>
+        
+        <title>{% block title siteName %}</title>
+
+        {% block metas %}{% endblock %}
+        {% block styles %}{% endblock %}
+    </head>
+    <body>
+        {% set logo = menuDemoDigital.logo.first()%}
+        {% block content %}{% endblock %}
+        {% block scripts %}{% endblock %}
+    </body>
+</html>

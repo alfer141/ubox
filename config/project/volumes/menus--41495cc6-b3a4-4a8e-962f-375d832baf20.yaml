@@ -1,0 +1,40 @@
+fieldLayouts:
+  152ef4be-2679-4a49-b1b3-9a315d3d3d9d:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+        name: Contenido
+        sortOrder: 1
+handle: menus
+hasUrls: true
+name: menus
+settings:
+  path: '@webroot/menus'
+sortOrder: 0
+titleTranslationKeyFormat: null
+titleTranslationMethod: null
+type: craft\volumes\Local
+url: '@web/menus/'

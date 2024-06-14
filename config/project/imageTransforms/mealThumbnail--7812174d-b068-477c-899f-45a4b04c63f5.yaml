@@ -1,0 +1,9 @@
+format: webp
+handle: mealThumbnail
+height: 189
+interlace: none
+mode: crop
+name: 'Meal Thumbnail'
+position: center-center
+quality: 100
+width: 189

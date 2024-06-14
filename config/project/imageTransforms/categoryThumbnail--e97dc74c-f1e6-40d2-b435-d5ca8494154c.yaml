@@ -1,0 +1,9 @@
+format: webp
+handle: categoryThumbnail
+height: 170
+interlace: none
+mode: crop
+name: 'Category Thumbnail'
+position: center-center
+quality: 100
+width: 125

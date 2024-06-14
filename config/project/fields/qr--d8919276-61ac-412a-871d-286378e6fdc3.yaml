@@ -1,0 +1,11 @@
+contentColumnType: text
+fieldGroup: d828c040-fb7e-42ea-9a84-6227909b1830 # Common
+handle: qr
+instructions: 'inserta la URL para generar el QR'
+name: QR
+searchable: false
+settings:
+  property: '    {"menu":"{{ menu.url }}"}'
+translationKeyFormat: null
+translationMethod: none
+type: kuriousagency\qrcode\fields\QRCodeField

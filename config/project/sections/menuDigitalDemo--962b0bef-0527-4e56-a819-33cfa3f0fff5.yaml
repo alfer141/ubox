@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: menuDigitalDemo
+name: 'Menú Digital Demo'
+propagationMethod: all
+siteSettings:
+  06877d42-d677-4ef1-a092-2c297d188b51: # Ubox
+    enabledByDefault: true
+    hasUrls: true
+    template: demo-menu/_entry
+    uriFormat: 'demo-menu/{slug}'
+structure:
+  maxLevels: null
+  uid: e1799f78-d9f7-4668-8515-7de3a190306e
+type: structure

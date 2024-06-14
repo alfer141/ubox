@@ -1,0 +1,22 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+ 
+:root{
+    --primary-color:#000;
+    --secondary-color:#fff;
+    
+}
+.light-mode{
+    --primary-color:#fff;
+    --secondary-color:#000;
+}
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="159px" viewBox="0 0 200 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>generic-logo</title>
+    <g id="generic-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="BebasNeue, Bebas Neue" font-size="64" font-weight="normal">
+        <text id="aquí-va" fill="#FFFFFF">
+            <tspan x="24.64" y="72">aquí va </tspan>
+        </text>
+        <text id="tu-logo" fill="#FFFFFF">
+            <tspan x="22.24" y="130">tu logo</tspan>
+        </text>
+    </g>
+</svg>
